@@ -30,7 +30,7 @@ export default function Page() {
 
     // This is where you'll send the data to your API endpoint.
     // We will create the API route in the next step.
-    console.log("Form data to be sent:", Object.fromEntries(formData));
+    // console.log("Form data to be sent:", Object.fromEntries(formData));
 
     // Simulating API call
     try {
@@ -41,7 +41,7 @@ export default function Page() {
       });
       // if (!response.ok) throw new Error('Submission failed');
       const result = await response.json();
-      console.log(result);
+    //   console.log(result);
 
       setSubmissionStatus({
         success: true,

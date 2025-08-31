@@ -45,7 +45,7 @@ export async function POST(request) {
       image: imagePath, // store path instead of binary
     };
 
-    console.log("schoolData", schoolData);
+    // console.log("schoolData", schoolData);
 
     const { name, address, city, state, contact, email_id } = entries;
 
@@ -58,7 +58,7 @@ export async function POST(request) {
       [name, address, city, state, contact, imagePath, email_id]
     );
 
-    console.log("Inserted ID:", result.insertId);
+    // console.log("Inserted ID:", result.insertId);
 
     // TODO: insert into MySQL with connection.query("INSERT ...", [values])
 

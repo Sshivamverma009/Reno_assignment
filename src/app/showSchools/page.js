@@ -37,7 +37,6 @@ export default function Page() {
       try {
         const res = await fetch("/api/showSchools");
         const data = await res.json();
-        console.log(data.data);
         setSchools(data.data || []); // match API structure
       } catch (err) {
         console.error("Error fetching schools:", err);
