@@ -45,7 +45,7 @@ export default function Page() {
 
       setSubmissionStatus({
         success: true,
-        message: "School added successfully! (API simulation)",
+        message: "School added successfully!",
       });
       reset(); // Reset form fields after successful submission
     } catch (error) {
